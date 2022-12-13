@@ -41,7 +41,7 @@ export class Master{
     // since we don't need "topic" we substitute it with "_"
     protected async handleNewTransaction(_: any,  message: Buffer){
         if(!message) return console.log("Transaction not valid ");
-        if (this.workersID.length == 0) return console.log("There are no workers for this transaction");
+        if (this.workersID.length === 0) return console.log("There are no workers for this transaction");
         console.log("New transaction from the boss: "+message.toString());
         
         // parsing the message
