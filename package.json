@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "tsc && node dist/index.js",
+    "commit": "git add . && git commit -m 'second commit' && git push origin main",
+    "build": "tsc --init"
   },
   "keywords": [],
   "author": "",
